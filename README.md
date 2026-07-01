@@ -11,7 +11,7 @@ claim, based on demographic, vehicle, financial, and driving-record variables.
 
 ### Data Preparation
 - Removed data leakage variables (`CLM_AMT`, `OLDCLAIM`) after discovering they caused 
-near-perfect accuracy in early runs — a key lesson in realistic pipeline design
+near-perfect accuracy in early runs 
 - Imputed missing values (median for numeric, mode for categorical)
 - Applied SMOTE inside the pipeline to prevent leakage across cross-validation folds
 - 80/20 stratified train-test split to preserve class proportions
